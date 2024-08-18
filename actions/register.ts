@@ -1,4 +1,5 @@
 "use server";
+import ListEntry from "@/app/models/Entry";
 import { connectDB } from "../app//lib/mongodb";
 import User from "../app//models/User";
 import bcrypt from "bcryptjs";

@@ -7,6 +7,9 @@ export default function Home() {
   const { status } = useSession();
   const router = useRouter();
 
+  const session = useSession();
+  console.log(session);
+
   const showSession = () => {
     if (status === "authenticated") {
       return (
@@ -35,9 +38,9 @@ export default function Home() {
     }
   };
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center">
+    <>
       <h1 className="text-xl">Home</h1>
-      {showSession()}
-    </main>
+      {/* {showSession()} */}
+    </>
   );
 }
